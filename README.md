@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DEV - Student Dashboard</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+
+    <!-- Dashboard -->
+    <div class="container my-5">
+
+        <!-- Welcome Card -->
+        <div class="card shadow-sm mb-4 border-0">
+
+            <div class="card-body text-center">
+
+                <h2 class="text-primary">
+                    Welcome, DEV SHERATHIYA
+                </h2>
+
+                <p class="text-muted mb-0">
+                    Student Dashboard
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Accordion -->
+        <div class="accordion shadow-sm" id="dashboardAccordion">
+
+
+            <!-- 1. Student Details -->
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#studentDetails">
+
+                         1. Student Details
+
+                    </button>
+
+                </h2>
+
+
+                <div id="studentDetails"
+                     class="accordion-collapse collapse show"
+                     data-bs-parent="#dashboardAccordion">
+
+                    <div class="accordion-body">
+
+                        <div class="card border-primary">
+
+                            <div class="card-header bg-primary text-white">
+                                Student Information
+                            </div>
+
+                            <ul class="list-group list-group-flush">
+
+                                <li class="list-group-item">
+                                    <strong>Name:</strong>
+                                    DEV SHERATHIYA
+                                </li>
+
+                                <li class="list-group-item">
+                                    <strong>Course:</strong>
+                                    B.Tech Computer Engineering
+                                </li>
+
+                                <li class="list-group-item">
+                                    <strong>Semester:</strong>
+                                    3rd Semester
+                                </li>
+
+                                <li class="list-group-item">
+                                    <strong>Student ID:</strong>
+                                    92500103035
+                                </li>
+
+                                <li class="list-group-item">
+                                    <strong>Status:</strong>
+                                    <span class="badge bg-success">
+                                        Active
+                                    </span>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- 2. Academic Progress -->
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#progress">
+
+                        2. Academic Progress
+
+                    </button>
+
+                </h2>
+
+
+                <div id="progress"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#dashboardAccordion">
+
+                    <div class="accordion-body">
+
+
+                        <div class="card border-0 shadow-sm">
+
+                            <div class="card-body">
+
+                                <h5 class="card-title text-primary mb-4">
+                                    Subject Progress
+                                </h5>
+
+
+                                <p class="mb-1">
+                                    <strong>HTML</strong>
+                                </p>
+
+                                <div class="progress mb-3">
+
+                                    <div class="progress-bar"
+                                         style="width: 80%">
+
+                                        80%
+
+                                    </div>
+
+                                </div>
+
+
+                                <p class="mb-1">
+                                    <strong>CSS & Bootstrap</strong>
+                                </p>
+
+                                <div class="progress mb-3">
+
+                                    <div class="progress-bar bg-success"
+                                         style="width: 95%">
+
+                                        95%
+
+                                    </div>
+
+                                </div>
+
+
+                                <p class="mb-1">
+                                    <strong>Java</strong>
+                                </p>
+
+                                <div class="progress mb-3">
+
+                                    <div class="progress-bar bg-warning"
+                                         style="width: 80%">
+
+                                        80%
+
+                                    </div>
+
+                                </div>
+
+
+                                <p class="mb-1">
+                                    <strong>Data Structures & Algorithms</strong>
+                                </p>
+
+                                <div class="progress">
+
+                                    <div class="progress-bar bg-info"
+                                         style="width: 85%">
+
+                                        85%
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- 3. Student Actions -->
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#buttons">
+
+                         3. Student Actions
+
+                    </button>
+
+                </h2>
+
+
+                <div id="buttons"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#dashboardAccordion">
+
+                    <div class="accordion-body">
+
+                        <div class="d-grid gap-2 d-md-flex">
+
+                            <button class="btn btn-primary">
+                                Profile
+                            </button>
+
+                            <button class="btn btn-success">
+                                Results
+                            </button>
+
+                            <button class="btn btn-warning">
+                                Assignments
+                            </button>
+
+                            <button class="btn btn-danger">
+                                Attendance
+                            </button>
+
+                            <button class="btn btn-dark">
+                                 ID Card
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- 4. Upcoming Exams -->
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#examSection">
+
+                         4. Upcoming Exams
+
+                    </button>
+
+                </h2>
+
+
+                <div id="examSection"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#dashboardAccordion">
+
+                    <div class="accordion-body">
+
+                        <div class="card border-info shadow-sm">
+
+                            <div class="card-header bg-info text-white">
+
+                                Upcoming Examination
+
+                            </div>
+
+
+                            <div class="card-body">
+
+                                <div class="table-responsive">
+
+                                    <table class="table table-bordered table-hover align-middle">
+
+                                        <thead class="table-primary">
+
+                                            <tr>
+                                                <th>Subject</th>
+                                                <th>Exam Date</th>
+                                            </tr>
+
+                                        </thead>
+
+
+                                        <tbody>
+
+                                            <tr>
+                                                <td><strong>DS</strong></td>
+                                                <td>15 October 2026</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><strong>ADBMS</strong></td>
+                                                <td>17 October 2026</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><strong>Java</strong></td>
+                                                <td>19 October 2026</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><strong>Web Technology</strong></td>
+                                                <td>21 October 2026</td>
+                                            </tr>
+
+                                        </tbody>
+
+                                    </table>
+
+                                </div>
+
+
+                                <button class="btn btn-primary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+
+                                    Exam Details
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- Exam Details Modal -->
+    <div class="modal fade"
+         id="exampleModal"
+         tabindex="-1">
+
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+
+
+                <!-- Modal Header -->
+                <div class="modal-header bg-primary text-white">
+
+                    <h5 class="modal-title">
+                          Examination Details
+                    </h5>
+
+                    <button type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal">
+                    </button>
+
+                </div>
+
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+
+                    <div class="alert alert-primary">
+
+                        <p class="mb-1">
+
+                            <strong>Student:</strong>
+                            DEV SHERATHIYA
+
+                        </p>
+
+                        <p class="mb-0">
+
+                            <strong>Course:</strong>
+                            B.Tech Computer Engineering
+
+                        </p>
+
+                    </div>
+
+
+                    <h6 class="text-primary">
+                        Examination Schedule
+                    </h6>
+
+
+                    <table class="table table-bordered table-striped">
+
+                        <thead class="table-dark">
+
+                            <tr>
+
+                                <th>Subject</th>
+                                <th>Date</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>DS</td>
+                                <td>15 October 2026</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>ADBMS</td>
+                                <td>17 October 2026</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Java</td>
+                                <td>19 October 2026</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Web Technology</td>
+                                <td>21 October 2026</td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+
+                    <button class="btn btn-secondary"
+                            data-bs-dismiss="modal">
+
+                        Close
+
+                    </button>
+
+                    <button class="btn btn-primary">
+
+                        Download Schedule
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
